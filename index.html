@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Motor Detail | Reparación Automotriz Profesional</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- NOISE OVERLAY -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo-link" aria-label="Motor Detail Home">
+        <svg class="logo-svg" viewBox="0 0 240 60" href="http://www.w3.org/2000/svg">
+          <rect x="1" y="1" width="58" height="58" rx="2" fill="white"/>
+          <rect x="6" y="6" width="48" height="48" rx="1" fill="black"/>
+          <path d="M14 40 L14 20 L24 33 L30 24 L36 33 L46 20 L46 40" fill="none" stroke="white" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+          <text x="72" y="28" font-family="'Barlow Condensed', sans-serif" font-weight="900" font-size="24" fill="white" letter-spacing="4">MOTOR</text>
+          <text x="72" y="52" font-family="'Barlow Condensed', sans-serif" font-weight="900" font-size="24" fill="white" letter-spacing="4">DETAIL</text>
+        </svg>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proceso">Proceso</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#testimonios">Clientes</a></li>
+        <li><a href="#contacto" class="nav-cta">Cotizar</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="scan-lines"></div>
+      <div class="grid-overlay"></div>
+      <div class="vignette"></div>
+    </div>
+
+    <div class="hero-eyebrow" data-animate>
+      <div class="ey-line"></div>
+      <span>ESPECIALISTA CERTIFICADO · CALI, COLOMBIA</span>
+      <div class="ey-line"></div>
+    </div>
+
+    <div class="hero-center">
+      <h1 class="hero-title" data-animate>
+        <span class="ht-line ht-1">REPARACIÓN DE</span>
+        <span class="ht-line ht-2">GOLPES</span>
+        <span class="ht-line ht-3">SIN PINTAR.</span>
+      </h1>
+
+      <p class="hero-sub" data-animate>
+        Técnica PDR de precisión milimétrica. Recuperamos la forma exacta de tu carrocería sin tocar la pintura de fábrica.
+      </p>
+
+      <div class="hero-btns" data-animate>
+        <a href="#contacto" class="btn-primary">
+          <span>DIAGNÓSTICO GRATIS</span>
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 10h12M10 4l6 6-6 6"/></svg>
+        </a>
+        <a href="#galeria" class="btn-outline">VER TRABAJOS</a>
+      </div>
+    </div>
+
+    <div class="hero-stats" data-animate>
+      <div class="hs"><strong>+200</strong><span>Vehículos restaurados</span></div>
+      <div class="hs-sep"></div>
+      <div class="hs"><strong>GARANTÍA</strong><span>De reparación</span></div>
+      <div class="hs-sep"></div>
+      <div class="hs"><strong>AÑOS </strong><span>De experiencia</span></div>
+      <div class="hs-sep"></div>
+      <div class="hs"><strong>98%</strong><span>Satisfacción</span></div>
+    </div>
+
+    <div class="hero-marquee" aria-hidden="true">
+      <div class="mq-track">
+        <span>REPARACIÓN PDR</span><em>·</em>
+        <span>RESTAURACION DE PINTURA</span><em>·</em>
+        <span>PULIDO</span><em>·</em>
+        <span>DETAILING</span><em>·</em>
+        <span>RENOVACION DE FAROS</span><em>·</em>
+        <span>REPARACIÓN PDR</span><em>·</em>
+        <span>RESTAURACION DE PINTURA</span><em>·</em>
+        <span>PULIDO</span><em>·</em>
+        <span>DETAILING</span><em>·</em>
+        <span>RENOVACION DE FAROS</span><em>·</em>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section class="galeria" id="galeria">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <div class="tag-row"><span class="sec-num">01</span><span class="sec-tag">GALERÍA</span></div>
+        <h2 class="section-title">RESULTADOS<br/><em>REALES</em></h2>
+        <p class="sec-desc">Arrastra el divisor para ver la transformación antes y después.</p>
+      </div>
+      <div class="gal-grid">
+
+        <div class="gal-item" data-animate>
+          <div class="bas-slider">
+            <div class="bas-before">
+              <div class="bas-bg bb1"></div>
+              <span class="bas-lbl lbl-l">ANTES</span>
+            </div>
+            <div class="bas-after">
+              <div class="bas-bg ba1"></div>
+              <span class="bas-lbl lbl-r">DESPUÉS</span>
+            </div>
+            <div class="bas-handle">
+              <div class="bh-line"></div>
+              <div class="bh-circle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18L3 12l6-6M15 6l6 6-6 6"/></svg>
+              </div>
+              <div class="bh-line"></div>
+            </div>
+          </div>
+          <p class="gal-cap">Abolladura puerta trasera — PDR</p>
+        </div>
+
+        <div class="gal-item" data-animate>
+          <div class="bas-slider">
+            <div class="bas-before">
+              <div class="bas-bg bb2"></div>
+              <span class="bas-lbl lbl-l">ANTES</span>
+            </div>
+            <div class="bas-after">
+              <div class="bas-bg ba2"></div>
+              <span class="bas-lbl lbl-r">DESPUÉS</span>
+            </div>
+            <div class="bas-handle">
+              <div class="bh-line"></div>
+              <div class="bh-circle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18L3 12l6-6M15 6l6 6-6 6"/></svg>
+              </div>
+              <div class="bh-line"></div>
+            </div>
+          </div>
+          <p class="gal-cap">Granizo — Capó completo</p>
+        </div>
+
+        <div class="gal-item" data-animate>
+          <div class="bas-slider">
+            <div class="bas-before">
+              <div class="bas-bg bb3"></div>
+              <span class="bas-lbl lbl-l">ANTES</span>
+            </div>
+            <div class="bas-after">
+              <div class="bas-bg ba3"></div>
+              <span class="bas-lbl lbl-r">DESPUÉS</span>
+            </div>
+            <div class="bas-handle">
+              <div class="bh-line"></div>
+              <div class="bh-circle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18L3 12l6-6M15 6l6 6-6 6"/></svg>
+              </div>
+              <div class="bh-line"></div>
+            </div>
+          </div>
+          <p class="gal-cap">Corrección y pulido de pintura</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="testimonios" id="testimonios">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <div class="tag-row"><span class="sec-num">02</span><span class="sec-tag">CLIENTES</span></div>
+        <h2 class="section-title">LO QUE DICEN<br/><em>DE NOSOTROS</em></h2>
+      </div>
+    </div>
+    <div class="t-wrap">
+      <div class="t-track" id="tTrack">
+        <div class="t-card"><div class="t-top"><div class="t-av">CM</div><div><strong>Carlos Mendoza</strong><span>Toyota Hilux 2022</span></div><div class="t-stars">★★★★★</div></div><p>"Increíble. Mi camioneta tenía granizo en todo el capó y quedó como nueva. No tocaron la pintura original para nada."</p></div>
+        <div class="t-card"><div class="t-top"><div class="t-av">AP</div><div><strong>Andrea Pérez</strong><span>Mazda CX-5 2021</span></div><div class="t-stars">★★★★★</div></div><p>"Rápidos, profesionales y muy honestos. Sin sorpresas en la factura final. Definitivamente volvería sin dudar."</p></div>
+        <div class="t-card"><div class="t-top"><div class="t-av">JR</div><div><strong>Julián Ríos</strong><span>BMW Serie 3 2020</span></div><div class="t-stars">★★★★★</div></div><p>"Tenía una abolladura fea en la puerta del conductor. En 3 horas la eliminaron completamente. Trabajo de primera."</p></div>
+        <div class="t-card"><div class="t-top"><div class="t-av">LT</div><div><strong>Laura Torres</strong><span>Chevrolet Onix 2023</span></div><div class="t-stars">★★★★★</div></div><p>"El pulido dejó mi carro mejor que cuando lo compré. La pintura brilla de una manera que no había visto antes."</p></div>
+        <div class="t-card"><div class="t-top"><div class="t-av">MG</div><div><strong>Miguel García</strong><span>Kia Sportage 2022</span></div><div class="t-stars">★★★★★</div></div><p>"Choqué el parachoques trasero y quedó como nuevo. Precio justo, trabajo impecable y atención excelente."</p></div>
+        <!-- duplicados -->
+        <div class="t-card"><div class="t-top"><div class="t-av">CM</div><div><strong>Carlos Mendoza</strong><span>Toyota Hilux 2022</span></div><div class="t-stars">★★★★★</div></div><p>"Increíble. Mi camioneta tenía granizo en todo el capó y quedó como nueva. No tocaron la pintura original para nada."</p></div>
+        <div class="t-card"><div class="t-top"><div class="t-av">AP</div><div><strong>Andrea Pérez</strong><span>Mazda CX-5 2021</span></div><div class="t-stars">★★★★★</div></div><p>"Rápidos, profesionales y muy honestos. Sin sorpresas en la factura final. Definitivamente volvería sin dudar."</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="servicios" id="servicios">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <div class="tag-row"><span class="sec-num">03</span><span class="sec-tag">SERVICIOS</span></div>
+        <h2 class="section-title">TODO LO QUE<br/><em>TU AUTO NECESITA</em></h2>
+      </div>
+      <div class="srv-grid">
+
+        <div class="srv-card srv-big" data-animate>
+          <div class="srv-n">01</div>
+          <div class="srv-ico">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.6">
+              <circle cx="32" cy="32" r="26"/>
+              <circle cx="32" cy="32" r="12"/>
+              <path d="M32 6v8M32 50v8M6 32h8M50 32h8"/>
+              <circle cx="32" cy="32" r="4" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Reparación de golpes sin Pintar — PDR</h3>
+          <p>Técnica de precisión que devuelve la forma original del metal sin dañar el acabado de fábrica. Resultados perfectos en pocas horas.</p>
+          <ul class="srv-list">
+            <li>Pintura de fábrica intacta al 100%</li>
+            <li>Sin rellenos ni masillas</li>
+            <li>Garantía de por vida</li>
+            <li>Servicio a domicilio disponible</li>
+          </ul>
+          <a href="#contacto" class="srv-link">SOLICITAR SERVICIO →</a>
+        </div>
+
+        <div class="srv-card" data-animate>
+          <div class="srv-n">02</div>
+          <div class="srv-ico">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.6">
+              <rect x="8" y="20" width="48" height="26" rx="4"/>
+              <path d="M20 46v8M44 46v8M8 32h48M20 20l4-8h16l4 8"/>
+            </svg>
+          </div>
+          <h3>Pulido y detailing</h3>
+          <p>Corrección de pintura en 3 pasos, nano-coating cerámico y detailing de competición. Protección cerámica hasta 3 años.</p>
+          <a href="#contacto" class="srv-link">VER MÁS →</a>
+        </div>
+
+        <div class="srv-card" data-animate>
+          <div class="srv-n">03</div>
+          <div class="srv-ico">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M12 52l6-18 10-6 8 0 10 6 6 18"/>
+              <circle cx="32" cy="20" r="10"/>
+              <path d="M8 56h48M22 46v-6a10 10 0 0020 0v6"/>
+            </svg>
+          </div>
+          <h3>Polimero liquido para faros</h3>
+          <p>Restauración Avanzada de Faros con Polímero 🚗✨
+Recupere la transparencia cristalina de sus faros con tecnología de polímero líquido.
+<p>
+​✅ Eliminación de tono amarillento y rayones.
+<p>
+​✅ Acabado de larga duración (no se vuelve a opacar rápido).
+<p>
+​✅ Mejora la seguridad y estética de tu vehículo.</p>
+          <a href="#contacto" class="srv-link">VER MÁS →</a>
+        </div>
+
+        
+        <div class="srv-card srv-cta" data-animate>
+          <p class="cta-q">¿NO SABES QUÉ NECESITAS?</p>
+          <h3>DIAGNÓSTICO<br/>GRATUITO</h3>
+          <p>Evaluamos tu vehículo sin costo. Informe con fotos y cotización clara, sin sorpresas.</p>
+          <a href="#contacto" class="btn-primary btn-sm">AGENDAR →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section class="proceso" id="proceso">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <div class="tag-row"><span class="sec-num">04</span><span class="sec-tag">PROCESO</span></div>
+        <h2 class="section-title">SIMPLE Y<br/><em>TRANSPARENTE</em></h2>
+      </div>
+      <div class="proc-grid">
+        <div class="proc-step" data-animate>
+          <div class="proc-n">01</div>
+          <div class="proc-bar"></div>
+          <h3>DIAGNÓSTICO</h3>
+          <p>Inspeccion detallada y analisis tecnico.</p>
+        </div>
+        <div class="proc-step" data-animate>
+          <div class="proc-n">02</div>
+          <div class="proc-bar"></div>
+          <h3>COTIZACIÓN</h3>
+          <p>Presupuesto claro y sin costos ocultos. Tú decides, nosotros cumplimos los tiempos.</p>
+        </div>
+        <div class="proc-step" data-animate>
+          <div class="proc-n">03</div>
+          <div class="proc-bar"></div>
+          <h3>REPARACIÓN</h3>
+          <p>Técnico certificado, herramientas especializadas y protocolos de calidad.</p>
+        </div>
+        <div class="proc-step" data-animate>
+          <div class="proc-n">04</div>
+          <div class="proc-bar"></div>
+          <h3>ENTREGA</h3>
+          <p>Revisión contigo, evidencia fotográfica del resultado y garantía de cada trabajo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- CONTACTO -->
+  <section class="contacto" id="contacto">
+    <div class="container">
+      <div class="ct-wrap">
+        <div class="ct-info" data-animate>
+          <div class="tag-row"><span class="sec-num">06</span><span class="sec-tag">CONTACTO</span></div>
+          <h2 class="section-title">AGENDA TU<br/><em>DIAGNÓSTICO</em><br/>HOY</h2>
+          <p>Solamente con cita<br/>Servicio a domicilio disponible para PDR.</p>
+          <div class="ct-datos">
+            <div class="ct-d">
+            </div>
+            <div class="ct-d">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 012 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92v2z"/></svg>
+              <span>+57 302 749 11 89</span>
+            </div>
+            <div class="ct-d">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>motordetail_</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="ct-form" id="contactoForm" data-animate>
+          <div class="form-row">
+            <div class="form-g">
+              <label>NOMBRE</label>
+              <input type="text" placeholder="Tu nombre completo" required/>
+            </div>
+            <div class="form-g">
+              <label>TELÉFONO</label>
+              <input type="tel" placeholder="+57 300 000 0000"/>
+            </div>
+          </div>
+          <div class="form-g">
+            <label>VEHÍCULO</label>
+            <input type="text" placeholder="Marca, modelo y año"/>
+          </div>
+          <div class="form-g">
+            <label>SERVICIO</label>
+            <select>
+              <option value="">Selecciona un servicio</option>
+              <option>Abolladuras PDR</option>
+              <option>Pulido y detailing</option>
+              <option>Polimero liquido para faros</option>
+              <option>Diagnóstico general</option>
+            </select>
+          </div>
+          <div class="form-g">
+            <label>DESCRIPCIÓN</label>
+            <textarea rows="3" placeholder="Describe brevemente el daño de tu vehículo..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full">
+            <span>ENVIAR SOLICITUD</span>
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 10h12M10 4l6 6-6 6"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="ft-top">
+        <div class="ft-brand">
+          <a href="#" aria-label="Motor Detail">
+            <svg class="logo-svg logo-sm" viewBox="0 0 240 60" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="58" height="58" rx="2" fill="white"/>
+              <rect x="6" y="6" width="48" height="48" rx="1" fill="black"/>
+              <path d="M14 40 L14 20 L24 33 L30 24 L36 33 L46 20 L46 40" fill="none" stroke="white" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+              <text x="72" y="28" font-family="'Barlow Condensed', sans-serif" font-weight="900" font-size="24" fill="white" letter-spacing="4">MOTOR</text>
+              <text x="72" y="52" font-family="'Barlow Condensed', sans-serif" font-weight="900" font-size="24" fill="white" letter-spacing="4">DETAIL</text>
+            </svg>
+          </a>
+          <p>Especialista en reparación automotriz con experiencia en Cali. Calidad certificada, garantía de reparacion.</p>
+        </div>
+        <div class="ft-col">
+          <h4>SERVICIOS</h4>
+          <ul>
+            <li><a href="#servicios">Abolladuras PDR</a></li>
+            <li><a href="#servicios">Polimero liquido para faros</a></li>
+            <li><a href="#servicios">Pulido detailing</a></li>
+          </ul>
+        </div>
+        <div class="ft-col">
+          <h4>EMPRESA</h4>
+          <ul>
+            <li><a href="#proceso">Nuestro proceso</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="ft-col">
+          <h4>REDES</h4>
+          <div class="ft-social">
+            <a href="https://www.instagram.com/motordetail_?igsh=M3NkZnNvM21pNzA=" class="ft-s">IG</a>
+            <a href="#" class="ft-s">FB</a>
+            <a href="#" class="ft-s">WA</a>
+            <a href="#" class="ft-s">TK</a>
+          </div>
+        </div>
+      </div>
+      <div class="ft-bottom">
+        <span>© 2025 MOTOR DETAIL. TODOS LOS DERECHOS RESERVADOS.</span>
+        <span>Cali · COLOMBIA</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Flotante -->
+  <a href="https://wa.me/573027491189" class="wa-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="main/main.js"></script>
+</body>
+</html>
