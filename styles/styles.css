@@ -549,6 +549,16 @@ section { padding: 112px 0; }
   cursor: ew-resize;
   user-select: none;
 }
+
+.bas-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  pointer-events: none;
+}
+
 .bas-before, .bas-after {
   position: absolute; inset: 0;
   overflow: hidden;
