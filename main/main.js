@@ -90,11 +90,11 @@ if (form) {
     const mensaje = `
 🚗 *NUEVA SOLICITUD - MOTOR DETAIL*
 
-👤 *Nombre:* ${nombre}
-📞 *Teléfono:* ${telefono}
-🚘 *Vehículo:* ${vehiculo}
-🔧 *Servicio:* ${servicio}
-📝 *Descripción:* ${descripcion}
+Nombre: ${nombre}
+Teléfono: ${telefono}
+Vehículo: ${vehiculo}
+Servicio: ${servicio}
+Descripción: ${descripcion}
     `.trim();
 
     const numero = '573164515170'; // ← Cambia esto por tu número real
