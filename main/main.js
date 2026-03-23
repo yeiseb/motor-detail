@@ -76,16 +76,36 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ─── FORM SUBMIT ─── */
-  const form = document.getElementById('contactoForm');
-  if (form) {
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-      const btn = form.querySelector('.btn-primary');
-      const orig = btn.innerHTML;
-      btn.innerHTML = '<span>¡ENVIADO!</span><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 10l4 4 8-8"/></svg>';
-      setTimeout(() => { btn.innerHTML = orig; form.reset(); }, 3000);
-    });
-  }
+ const form = document.getElementById('contactoForm');
+if (form) {
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    const nombre      = document.getElementById('f-nombre').value;
+    const telefono    = document.getElementById('f-telefono').value;
+    const vehiculo    = document.getElementById('f-vehiculo').value;
+    const servicio    = document.getElementById('f-servicio').value;
+    const descripcion = document.getElementById('f-descripcion').value;
+
+    const mensaje = `
+🚗 *NUEVA SOLICITUD - MOTOR DETAIL*
+
+👤 *Nombre:* ${nombre}
+📞 *Teléfono:* ${telefono}
+🚘 *Vehículo:* ${vehiculo}
+🔧 *Servicio:* ${servicio}
+📝 *Descripción:* ${descripcion}
+    `.trim();
+
+    const numero = '573164515170'; // ← Cambia esto por tu número real
+    window.open(`https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`, '_blank');
+
+    const btn = form.querySelector('.btn-primary');
+    const orig = btn.innerHTML;
+    btn.innerHTML = '<span>¡REDIRIGIENDO A WHATSAPP!</span>';
+    setTimeout(() => { btn.innerHTML = orig; form.reset(); }, 3000);
+  });
+}
 
   /* ─── SMOOTH SCROLL ─── */
   document.querySelectorAll('a[href^="#"]').forEach(a => {
