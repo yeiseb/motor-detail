@@ -344,22 +344,22 @@ Recupere la transparencia cristalina de sus faros con tecnología de polímero l
 
         <form class="ct-form" id="contactoForm" data-animate>
           <div class="form-row">
-            <div class="form-g">
-              <label>NOMBRE</label>
-              <input type="text" placeholder="Tu nombre completo" required/>
-            </div>
-            <div class="form-g">
-              <label>TELÉFONO</label>
-              <input type="tel" placeholder="+57 300 000 0000"/>
-            </div>
-          </div>
+  <div class="form-g">
+    <label>NOMBRE</label>
+    <input id="f-nombre" type="text" placeholder="Tu nombre completo" required/>
+  </div>
+  <div class="form-g">
+    <label>TELÉFONO</label>
+    <input id="f-telefono" type="tel" placeholder="+57 300 000 0000"/>
+  </div>
+</div>
+<div class="form-g">
+  <label>VEHÍCULO</label>
+  <input id="f-vehiculo" type="text" placeholder="Marca, modelo y año"/>
+</div>
           <div class="form-g">
-            <label>VEHÍCULO</label>
-            <input type="text" placeholder="Marca, modelo y año"/>
-          </div>
-          <div class="form-g">
-            <label>SERVICIO</label>
-            <select>
+  <label>SERVICIO</label>
+  <select id="f-servicio">
               <option value="">Selecciona un servicio</option>
               <option>Abolladuras PDR</option>
               <option>Pulido y detailing</option>
@@ -367,10 +367,10 @@ Recupere la transparencia cristalina de sus faros con tecnología de polímero l
               <option>Diagnóstico general</option>
             </select>
           </div>
-          <div class="form-g">
-            <label>DESCRIPCIÓN</label>
-            <textarea rows="3" placeholder="Describe brevemente el daño de tu vehículo..."></textarea>
-          </div>
+<div class="form-g">
+  <label>DESCRIPCIÓN</label>
+  <textarea id="f-descripcion" rows="3" ...></textarea>
+</div>
           <button type="submit" class="btn-primary btn-full">
             <span>ENVIAR SOLICITUD</span>
             <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 10h12M10 4l6 6-6 6"/></svg>
