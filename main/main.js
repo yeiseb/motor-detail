@@ -97,7 +97,7 @@ Servicio: ${servicio}
 Descripción: ${descripcion}
     `.trim();
 
-    const numero = '573164515170'; // ← Cambia esto por tu número real
+    const numero = '573027491189'; // ← Cambia esto por tu número real
     window.open(`https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`, '_blank');
 
     const btn = form.querySelector('.btn-primary');
